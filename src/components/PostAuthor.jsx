@@ -1,0 +1,18 @@
+import React from 'react'
+import AuthorImage from '../assets/a1.jpg'
+import { Link } from 'react-router-dom'
+const PostAuthor = () => {
+  return (
+    <Link to={`/posts/user/:id`} className='post-author'>
+        <div className="post-author-image">
+            <img src={AuthorImage} alt="" />
+        </div>
+        <div className="post-author-info">
+            <h5>Lana White</h5>
+            <small>Just Now</small>
+        </div>
+    </Link>
+  )
+}
+
+export default PostAuthor
