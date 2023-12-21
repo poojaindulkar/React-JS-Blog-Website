@@ -427,6 +427,46 @@ input, select,textarea{
 } 
 /*.................... End Profile Page ................*/
 
+/*.................... Start Dashboard ................*/
+.dashboard-container{
+    display: flex;
+    flex-direction: column;
+    gap:.8rem;
+}
+.dashboard-post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: var(--color-white);
+    padding: .7rem 1.3rem;
+    border-radius: var(--border-radius-2);
+
+}
+.dashboard-post-info{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.dashboard-post-image{
+    width: 5rem;
+    border-radius: var(--border-radius-2);
+    overflow: hidden;
+
+}
+
+.dashboard-posts-action{
+    display:flex;
+    gap: 1rem;
+}
+
+.dashboard-posts-action .btn-V{
+    background: var(--color-light);
+}
+.dashboard-posts-action .btn-V:hover{
+    background: var(--color-gray-900);
+}
+/*.................... End Dashboard ...................*/
 
 
 /*.................... Start Error Page ...............*/
