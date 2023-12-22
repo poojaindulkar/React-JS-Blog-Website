@@ -120,6 +120,7 @@ section{
 
 /*....................Start Nav Bar...............*/
 nav{
+    z-index: 1000;
     background: var(--color-primary);
     height: 5rem;
     display: grid;
@@ -296,7 +297,7 @@ height: fit-content;
 /*..................... Start Sign Up/ Sign In.......................*/
 .form-container{
     width: 50%;
-    
+
 }
 form{
     display: flex;
@@ -392,6 +393,7 @@ input, select,textarea{
     gap: 2rem;
     text-align: center;
     align-items: center;
+    margin: auto;
 }
 .profile-wrapper{
     position: relative;
@@ -427,7 +429,7 @@ input, select,textarea{
     border-radius: 50%;
     display: flex;
 
-} 
+}  
 /*.................... End Profile Page ................*/
 
 /*.................... Start Dashboard ................*/
