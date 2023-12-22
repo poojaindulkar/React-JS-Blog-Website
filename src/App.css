@@ -194,7 +194,12 @@ nav{
 
 }
 .head-post-container .post-image{
-height: fit-content;
+    height: fit-content;
+    border: 1.4rem solid var(--color-white);
+    box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.1);
+}
+.head-post-container .post-image img{
+    border-radius: var(--border-radius-3);
 }
 .head-post-container h1{
     margin-bottom: 1.7rem;
@@ -501,9 +506,12 @@ input, select,textarea{
 
 /*.................... Start Footer ...............*/
 footer{
+    
     background: var(--color-gray-700);
     margin-top: 8rem;
     padding-top: 6rem;
+    width: 100%;
+    
 }
 
 .footer-categories{
@@ -536,3 +544,164 @@ footer{
     
 }
 /*.................... End Footer ...............*/
+
+
+/*.....................Media Screen....................*/
+
+/*....................Media Screen-1024px.................*/
+@media (max-width:1024px) {
+    h1{
+        font-size: 1.8rem in !important;
+    }
+    h2{
+        font-size: 1.4rem !important;
+    }
+    /*.......... nav ............*/
+    .nav-container{
+        position: relative;
+        height: 100%;
+    }
+    .nav-menu{
+        position: absolute;
+        top: 5rem;
+        display: flex;
+        gap: 0;
+        right: 0;
+        flex-direction: column;
+        perspective: 400px;
+    }
+    .nav-menu li{
+        width: 100%;
+        box-shadow: -2rem 4rem 4rem rgba(0,0,0,0.26);
+        animation: NavAni forwards 400ms ease;
+        opacity: 0;
+        transform: rotateY(90deg);
+        transform-origin: top right;
+    }
+    /*.......... Nav animation ............*/
+    @keyframes NavAni {
+        to{
+            opacity: 1;
+            transform: rotateY(0);
+        }
+        
+    }
+    .nav-menu li:nth-child(2){
+        animation-delay: 200ms;
+    }
+    .nav-menu li:nth-child(3){
+        animation-delay: 400ms;
+    }
+    .nav-menu li:nth-child(4){
+        animation-delay: 600ms;
+    }
+    .nav-menu li:nth-child(5){
+        animation-delay: 800ms;
+    }
+
+    .nav-menu li a{
+        display: block;
+        background: var(--color-primary);
+        padding: 1.4rem 4.2rem;
+        margin: 0.05rem;
+
+    }
+    .nav-toogle-button{
+        display: inline-block;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    /*.......... Home ............*/
+    .head-past-container{
+        gap: 2rem;
+    }
+    .head-past-container h1{
+        font-size: 2rem !important;
+    }
+    .post-container{
+        grid-template-columns: 1fr 1fr;
+        gap:2rem;
+    }
+
+    /*.......... Author posts ............*/
+    .authorPosts-container{
+        gap: 2rem;
+    }
+
+    /*.......... PostDtail ............*/
+    .PostDetail-container{
+        width: 70%;
+    }
+
+    /*.......... Form Container ............*/
+    .form-container{
+        width: 70%;
+    }
+
+    /*.......... Author ............*/
+    .author-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    } 
+    
+    /*.......... Dashboard ............*/
+    .dashboard-post{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/*....................Media Screen-600px.................*/
+@media (max-width:600px) {
+    /*.......... Home ............*/
+    .head-post-container{
+        grid-template-columns: 1fr;
+    }
+    .head-past-container .post-image{
+        grid-row: 1;
+    }
+    .posts-container{
+        grid-template-columns: 1fr;
+    }
+
+    /*.......... Author posts ............*/
+    .authorPosts-container{
+        grid-template-columns: 1fr;
+    }
+
+    /*.......... Categories ............*/
+    .categoryPosts-container{
+        grid-template-columns: 1fr 1fr;
+        gap:2rem;
+    }
+
+    /*.......... PostDtail ............*/
+
+    .PostDetail-container{
+        width: 90%;
+        background: transparent;
+        padding: 0;
+    }
+
+    /*.......... Form Container ............*/
+    .form-container{
+        width: 90%;
+    }
+
+    /*.......... Author ............*/
+    .author-container{
+        grid-template-columns: 1fr;
+      
+    }  
+    
+    /*.......... Categories ............*/
+    .categoryPosts-container{
+        grid-template-columns: 1fr;
+    }
+
+    
+
+
+
+}
