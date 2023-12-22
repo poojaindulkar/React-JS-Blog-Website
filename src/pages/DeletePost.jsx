@@ -2,7 +2,9 @@ import React from 'react'
 
 const DeletePost = () => {
   return (
-    <div>DeletePost</div>
+    <section className="delete">
+      
+    </section>
   )
 }
 
