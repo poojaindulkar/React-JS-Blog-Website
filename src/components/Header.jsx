@@ -11,7 +11,7 @@ const Header = () => {
           </Link>
 
           <ul className="nav-menu">
-            <li><Link to={'/profile'}>Pooja Indulkar</Link></li>
+            <li><Link to={'/profile/:id'}>Pooja Indulkar</Link></li>
             <li><Link to={'/create'}>Create Posts</Link></li>
             <li><Link to={'/author'}>Authors</Link></li>
             <li><Link to={'/logout'}>Logout</Link></li>
