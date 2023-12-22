@@ -294,10 +294,14 @@ height: fit-content;
 
 
 /*..................... Start Sign Up/ Sign In.......................*/
+.form-container{
+    width: 50%;
+    
+}
 form{
     display: flex;
     flex-direction: column;
-    gap:.8rem
+    gap:.8rem;
 }
 input, select,textarea{
     width: 100%;
@@ -315,11 +319,10 @@ input, select,textarea{
     border-radius: var(--border-radius-1);
 
 }
-.form-container{
-    width: 50%;
-}
+
 .form-container h2{
     margin-bottom: 2rem;
+    text-align: center;
 }
 .form-container small{
     margin-top: 1.5rem;
@@ -472,8 +475,8 @@ input, select,textarea{
 /*.................... Start Error Page ...............*/
 .error-center{
     text-align: center;
-    /* margin-top: 6rem; */
-    padding-top: 6rem;
+    margin-top: 6rem;
+    /* padding-top: 6rem; */
     display:flex;
     flex-direction: column;
     gap: 1rem;
@@ -482,6 +485,14 @@ input, select,textarea{
 }
 
 /*.................... End Error Page ...............*/
+
+/*...................... Quill Css .......................*/
+.ql-editor{
+    overflow: scroll;
+    background: var(--color-white);
+    height: 10rem !important;
+}
+
 
 
 
